@@ -1,0 +1,74 @@
+:root {
+  --primary: #6c5ce7;
+  --text: #2d3436;
+  --bg: #f9f9f9;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: var(--bg);
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+}
+
+.container {
+  max-width: 600px;
+  width: 100%;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+#search-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+input {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  outline: none;
+}
+
+input:focus {
+  border-color: var(--primary);
+}
+
+button {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+.hidden {
+  display: none;
+}
+
+.word-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+.meaning-block {
+  margin: 20px 0;
+}
+.part-of-speech {
+  font-style: italic;
+  color: var(--primary);
+}

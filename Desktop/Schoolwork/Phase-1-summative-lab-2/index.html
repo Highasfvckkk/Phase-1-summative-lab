@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wordly Interactive Dictionary</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Wordly<span>.</span></h1>
+        <p>Your interactive language companion</p>
+      </header>
+
+      <form id="search-form">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Search for a word..."
+          aria-label="Search word"
+        />
+        <button type="submit">Search</button>
+      </form>
+
+      <div id="result-container" class="hidden">
+        <div class="word-header">
+          <div>
+            <h2 id="display-word"></h2>
+            <p id="phonetic"></p>
+          </div>
+          <button id="audio-btn" aria-label="Play pronunciation">🔊</button>
+        </div>
+
+        <div id="definitions"></div>
+        <div id="synonyms-section">
+          <strong>Synonyms:</strong> <span id="synonyms"></span>
+        </div>
+      </div>
+
+      <div id="error-message" class="hidden"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
