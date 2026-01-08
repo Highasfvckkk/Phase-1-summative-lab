@@ -4,13 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wordly Interactive Dictionary</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <div class="container">
       <header>
-        <h1>Wordly<span>.</span></h1>
-        <p>Your interactive language companion</p>
+        <h1>Wordly Dictionary</h1>
       </header>
 
       <form id="search-form">
@@ -24,22 +23,20 @@
       </form>
 
       <div id="result-container" class="hidden">
-        <div class="word-header">
-          <div>
-            <h2 id="display-word"></h2>
-            <p id="phonetic"></p>
-          </div>
-          <button id="audio-btn" aria-label="Play pronunciation">🔊</button>
-        </div>
+        <h2 id="display-word"></h2>
+        <p id="phonetic"></p>
+        <button id="audio-btn" aria-label="Play pronunciation">🔊 Play</button>
 
         <div id="definitions"></div>
-        <div id="synonyms-section">
-          <strong>Synonyms:</strong> <span id="synonyms"></span>
+
+        <div id="synonyms-section" class="hidden">
+          <h3>Synonyms</h3>
+          <div id="synonyms"></div>
         </div>
       </div>
 
       <div id="error-message" class="hidden"></div>
     </div>
-    <script src="script.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
